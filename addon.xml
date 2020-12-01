@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.EuropeByKodi" name="Europe by Kodi" version="0.0.1" provider-name="Torro">
+	<requires>
+		<import addon="xbmc.python"                 version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Watch EbS (and EbS+)</summary>
+		<description lang="en">Watch EbS + EbS+ livestreams.</description>
+		<news>
+v0.0.1:
+  initial publication.
+</news>
+		<platform>all</platform>
+		<language>English</language>
+		<license>GPLv3+</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<disclaimer>Copyright (C) 2020 Torro.
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program. If not, see http://www.gnu.org/licenses/</disclaimer>
+	</extension>
+</addon>
