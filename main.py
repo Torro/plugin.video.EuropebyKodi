@@ -1,14 +1,16 @@
 import sys
+
 import xbmcgui
 import xbmcplugin
 
-EbS_URL = "https://audiovisual.ec.europa.eu"
 handle = int(sys.argv[1])
 
+# fmt: off
+channels = [
+    ("https://euc-live.fl.freecaster.net/live/eucom/ebs-audio_eng=96000-video=1600000.m3u8", xbmcgui.ListItem("EbS")),
+    ("https://euc-live.fl.freecaster.net/live/eucom/ebsp-audio_eng=96000-video=1600000.m3u8", xbmcgui.ListItem("EbS+"))
+]
+# fmt: on
 
-def li(item):
-    return xbmcgui.ListItem(item)
-
-
-xbmcplugin.addDirectoryItems(handle, [("EbS", li("EbS")), ("EbS2", li("EbS+"))])
+xbmcplugin.addDirectoryItems(handle, channels)
 xbmcplugin.endOfDirectory(handle)
