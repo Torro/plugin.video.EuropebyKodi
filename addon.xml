@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.EuropeByKodi" name="Europe by Kodi" version="0.0.1" provider-name="Torro">
+<addon id="plugin.video.EuropebyKodi" name="Europe by Kodi" version="0.0.1" provider-name="Torro">
 	<requires>
 		<import addon="xbmc.python"                 version="2.26.0"/>
 	</requires>
@@ -9,6 +9,9 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Watch EbS (and EbS+)</summary>
 		<description lang="en">Watch EbS + EbS+ livestreams.</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
 		<news>
 v0.0.1:
   initial publication.
